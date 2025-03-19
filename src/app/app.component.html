@@ -1,0 +1,10 @@
+<div style="text-align: center; margin-top: 50px;">
+  <h2>Simple API Caller</h2>
+  <input type="text" [(ngModel)]="url" placeholder="Enter API URL" style="width: 60%; padding: 8px;">
+  <button (click)="hitApi()" style="padding: 8px 15px; margin-left: 10px;">Hit API</button>
+  
+  <div *ngIf="response" style="margin-top: 20px; padding: 10px; border: 1px solid #ccc;">
+    <strong>Response:</strong>
+    <pre>{{ response }}</pre>
+  </div>
+</div>
